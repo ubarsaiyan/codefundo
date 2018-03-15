@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>News Prioritizer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="luis.js"></script>
+</head>
+<body>
+
+  <div class="jumbotron text-center">
+    <h1>News Prioritizer</h1>
+    <p>The news that matters! </p> 
+  </div>
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>Paste the news</h3>
+        <form class="news" id="news">
+          <div class="form-group">
+            <br>
+            <br>
+            <!-- <label for="text">News:</label> -->
+            <textarea type="text" class="form-control" id="text" rows="10"></textarea>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+      <div class="col-sm-6">
+        <h3>Breaking News</h3>
+        <h5>(Color Intensity increases with increasing priority of news)</h5>
+        <br>
+        <p id="breaking-news"></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
