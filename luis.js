@@ -5,7 +5,7 @@ window.onload = function(){
 	const high_color = ['#FFF9C4','#FFF9C4','#FFF9C4','#FFF9C4','#FFF176','#FFF176','#FFF176','#FFF176','#FBC02D','#FBC02D','#FBC02D'];
 	
 	$('#submit-btn').on('click', function() {
-		let news_sent = $('#text').val().split('\. ');
+		let news_sent = $('#text').val().split(/\.\s|\n/);
 		let priority = new Array();
 		let link = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/71679dd5-1685-46eb-b514-b23778fe42ec?subscription-key=930339f93c4a49918bf63055eb3f4498&verbose=true&timezoneOffset=0&q=';	
 		$('#breaking-news').html('');
